@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="icon" href="./img/ghost.png">
-  <title>Steven's Card</title>
+  <meta name="description" content="Yuchao (Steven) Wang — Software Engineer at ByteDance. AI agents, developer tools, and LLM post-training." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/ghost.png" />
+  <title>Yuchao (Steven) Wang</title>
 </head>
-
 <body>
-  <div id="container">
-    <div id="card">
-      <div id="top-panel">
-        <div id="left-panel">
-          <img class="avatar" src="img/avatar3.jpg" />
-        </div>
+  <main id="container">
+    <article id="card">
+      <header id="top-panel">
+        <img class="avatar" src="img/profile.png" alt="Yuchao (Steven) Wang" width="160" height="160" />
         <div id="right-panel">
-          <h1 id="name">Steven Kid</h1>
-          <p>Data Science Student.</p>
-          <p>Interested in AI Agents, AI Infra 👨🏻‍💻 <br> & Reliable Systems.</p>
+          <p class="eyebrow">SHENZHEN, CHINA</p>
+          <h1 id="name">Yuchao <span>(Steven)</span> Wang</h1>
+          <p class="role">Software Engineer at ByteDance</p>
+          <p>Building AI agents and developer tools at Volcano Engine. LoopX contributor. Interested in agent evaluation and LLM post-training.</p>
         </div>
-      </div>
-      <div id="bottom-panel" class="social-icons">
-        <a href="https://stevenblog.vercel.app/" target="_blank">
-          <img class="icon" title="Blog" src="img/xicon/blog.png" />
-        </a>
-        <a href="file/Yuchao Wang.pdf" target="_blank">
-          <img class="icon" title="CV" src="img/xicon/note.svg" />
-        </a>
-        <a href="https://github.com/steven-kid" target="_blank">
-          <img class="icon" title="GitHub" src="img/xicon/github.svg" />
-        </a>
-        <a href="https://www.linkedin.com/in/yuchao-wang-a48b55271/" target="_blank">
-          <img class="icon" title="LinkedIn" src="img/xicon/linkedin.svg" />
-        </a>
-        <a href="mailto:stevenkid404@gmail.com">
-          <img class="icon" title="Email" src="img/xicon/email.png" />
-        </a>
-
-      </div>
-    </div>
-  </div>
+      </header>
+      <nav id="bottom-panel" aria-label="Contact and profiles">
+        <a href="https://github.com/steven-kid">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/yuchao-wang-a48b55271/">LinkedIn ↗</a>
+        <a href="https://stevenblog.vercel.app/">Blog ↗</a>
+        <a href="mailto:stevenkid404@gmail.com">Email ↗</a>
+        <a href="file/Yuchao%20Wang.pdf">CV ↗</a>
+      </nav>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <div class="entry">
+          <div class="entry-heading"><h3>ByteDance <span>· Software Engineer</span></h3><p class="date">Jan 2025–Present</p></div>
+          <p>Build AI agents and developer tools for AI-assisted software development and intelligent auditing.</p>
+          <p class="links"><a href="https://www.byteplus.com/">BytePlus · International ↗</a><a href="https://www.volcengine.com/">Volcano Engine · China ↗</a></p>
+        </div>
+        <div class="entry">
+          <div class="entry-heading"><h3>Alibaba Group <span>· Software Engineer Intern</span></h3><p class="date">Jun–Sep 2024</p></div>
+          <p>Worked on livestreaming features for <a href="https://www.goofish.com/">Goofish (闲鱼)</a>.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-heading"><h3>JD.COM <span>· Software Engineer Intern</span></h3><p class="date">Mar–Jun 2024</p></div>
+          <p>Worked on the development of an internal data platform.</p>
+        </div>
+      </section>
+      <section aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+        <div class="entry"><h3><a href="https://github.com/loopx-project/loopx">LoopX ↗</a></h3><p>Contribute to Lark integration, the desktop app, and evaluation tools for long-running AI agent tasks.</p></div>
+        <div class="entry"><h3><a href="https://github.com/steven-kid/codex-dynamic-workflow">Codex Dynamic Workflow ↗</a></h3><p>Reusable workflows for Codex with parallel agents, validation, and resumable execution.</p></div>
+        <div class="entry"><h3>EvoLoop</h3><p>Automate small language model training experiments with data generation, training, and evaluation.</p></div>
+      </section>
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <div class="entry"><div class="entry-heading"><h3>Beijing Normal University</h3><p class="date">2021–2025</p></div><p>Bachelor's in Data Science and Big Data Technology</p></div>
+        <div class="entry"><div class="entry-heading"><h3>Adelaide University</h3><p class="date">Jul–Nov 2023</p></div><p>Computer Science exchange</p></div>
+      </section>
+      <footer>Python · TypeScript · Go · PyTorch · Google ADK · MCP</footer>
+    </article>
+  </main>
 </body>
-
 </html>

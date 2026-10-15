@@ -33,9 +33,57 @@ footer{padding-top:30px}.email{font-size:23px}
 @media(max-width:760px){.school{grid-template-columns:44px 1fr;gap:14px}.school-logo{width:44px;height:44px}.school-logo img{width:34px;height:34px}.school+ .school{padding-left:22px;margin-left:18px}}
 @media(max-width:520px){.hero{padding:36px 0 50px}.portrait{width:112px}.education-grid{gap:26px}.school+ .school{border-left:0;border-top:1px solid var(--rule);padding:26px 0 0;margin:0}.school{grid-template-columns:48px 1fr;gap:18px}.school-logo{width:48px;height:48px}.education-grid h3{margin-top:7px}}
 
-/* Locally hosted Manrope; a consistent, quieter type system. */
-@font-face{font-family:Manrope;font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/manrope-400.ttf") format("truetype")}
-@font-face{font-family:Manrope;font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/manrope-500.ttf") format("truetype")}
-@font-face{font-family:Manrope;font-style:normal;font-weight:600;font-display:swap;src:url("/fonts/manrope-600.ttf") format("truetype")}
-:root{--sans:Manrope,"PingFang SC","Microsoft YaHei",sans-serif}body{font-family:var(--sans);-webkit-font-smoothing:antialiased} .wordmark{font-family:var(--sans);font-weight:600;letter-spacing:-.7px}
-h1{font-family:var(--sans);font-weight:500;font-size:clamp(44px,5.5vw,66px);line-height:1.18;letter-spacing:-2.8px}h1 em{font-style:normal;font-weight:500}.lead{font-size:23px;font-weight:500;letter-spacing:-.7px}.section-heading h2,.email{font-family:var(--sans);font-weight:500;letter-spacing:-.8px}.section-heading h2{font-size:25px}.email{font-size:21px}.about{max-width:480px;font-size:14px;line-height:1.9}.about a{white-space:nowrap}.note p{font-size:14px}.note strong{font-weight:500}.school-logo{background:transparent;border:0;border-radius:0;overflow:visible}.school-logo img{mix-blend-mode:multiply}.education-grid h3{font-weight:600;font-size:15px}.project h3{font-weight:600;font-size:17px}.education-grid .education-date,.number{font-family:var(--sans);font-variant-numeric:tabular-nums}@media(max-width:520px){h1{font-size:44px;letter-spacing:-2px}.lead{font-size:21px}.section-heading h2{font-size:24px}.project h3{font-size:16px}}
+
+/* Bookish typography, with a small botanical signature. */
+:root {
+  --paper:#f8f6f1; --ink:#302d2b; --muted:#746e68; --accent:#7b405f; --rule:#e0dbd2;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Songti SC","STSong",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+}
+body { font-family:var(--serif); font-size:18px; line-height:1.7; -webkit-font-smoothing:auto; }
+::selection { background:#e8dce3; color:var(--ink); }
+.wordmark { font:600 26px/1.2 var(--serif); letter-spacing:-.6px; gap:12px; }
+.wordmark .brand-mark { grid-template-columns:8px 8px; grid-template-rows:8px 8px; gap:2px; transform:rotate(-12deg); }
+.brand-mark i { background:#658986; border-radius:0 85% 0 85%; }
+.brand-mark i:nth-child(2) { transform:rotate(90deg); opacity:.65; }
+.brand-mark i:nth-child(3) { transform:rotate(90deg); opacity:.65; }
+.brand-mark i:nth-child(4) { opacity:1; }
+.company-link { text-decoration-color:#b399a5; text-underline-offset:4px; }
+.company-link:hover { color:var(--accent); }
+.eyebrow { font:500 10px/1.6 var(--sans); letter-spacing:.14em; }
+
+.page { max-width:1060px; }
+.masthead { padding:30px 0; border-bottom:1px solid var(--rule); }
+.masthead nav,.social,.fullname,.tag,.number,.section-heading>span,.education-date,.study-type,.footer-meta { font-family:var(--sans); }
+.hero { grid-template-columns:minmax(0,1.7fr) minmax(180px,1fr); gap:60px; padding:80px 0 70px; }
+h1 { font:500 clamp(46px,5.4vw,64px)/1.12 var(--serif); letter-spacing:-1.8px; margin:20px 0 14px; }
+h1 em { font-style:italic; font-weight:500; color:var(--accent); }
+.fullname { font-size:12px; margin-bottom:25px; }
+.lead { font:400 25px/1.45 var(--serif); letter-spacing:-.3px; }
+.about { max-width:490px; font-size:18px; line-height:1.7; color:#605953; }
+.about a { white-space:nowrap; }
+.portrait { max-width:240px; position:relative; }
+.portrait::after { content:"✳"; position:absolute; right:-10px; bottom:-22px; font:56px/1 var(--serif); color:#658986; transform:rotate(12deg); }
+.photo-wrap { padding:8px; border:1px solid var(--rule); border-radius:50%; background:transparent; }
+.social { font-size:12px; gap:24px; }
+.section-heading h2 { font:400 31px/1.3 var(--serif); letter-spacing:-.5px; }
+.section-heading>span { font-size:9px; }
+.project { padding:24px 0; grid-template-columns:30px 1fr auto 24px; }
+a.project:hover { padding:24px 0; background:transparent; }
+.project h3 { font:600 23px/1.4 var(--serif); letter-spacing:-.3px; }
+.project p { font-size:16px; line-height:1.65; color:var(--muted); }
+.number { font-size:10px; color:#8d8378; }
+.arrow { color:var(--accent); }
+.note { border-left:2px solid #658986; margin:34px 0 60px; padding:3px 0 3px 20px; }
+.note p { font:italic 18px/1.6 var(--serif); color:var(--muted); }
+.note strong { font-weight:400; }
+.school-logo { background:transparent; border:0; border-radius:0; overflow:visible; }
+.school-logo img { mix-blend-mode:multiply; }
+.education-grid h3 { font:600 20px/1.35 var(--serif); margin:8px 0; letter-spacing:-.2px; }
+.education-grid p { font-size:15px; }
+.education-grid .education-date { font:10px/1.6 var(--sans); letter-spacing:.04em; }
+.study-type { font-size:10px; }
+footer { font-size:15px; }
+.email { font:400 25px/1.5 var(--serif); letter-spacing:-.4px; }
+@media(max-width:760px) { .hero { gap:30px; padding:58px 0; }.portrait { max-width:185px; }.lead { font-size:23px; }.project { grid-template-columns:24px 1fr 20px; }.project h3 { font-size:21px; } }
+@media(max-width:520px) { .page { padding:0 24px; }.wordmark { font-size:24px; }.masthead nav { gap:16px; }.hero { grid-template-columns:1fr; gap:30px; padding:36px 0 48px; }.portrait { width:112px; }.portrait::after { font-size:34px; right:-12px; bottom:-12px; }h1 { font-size:48px; letter-spacing:-1.2px; }.about { font-size:17px; }.lead { font-size:23px; }.section-heading h2 { font-size:28px; }.project p { font-size:15px; }.education-grid h3 { font-size:20px; }.note p { font-size:17px; }.email { font-size:24px; } }

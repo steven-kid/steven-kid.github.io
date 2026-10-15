@@ -18,3 +18,17 @@ footer{padding-top:30px}.email{font-size:23px}
 @media(max-width:760px){.hero{gap:28px;padding:60px 0}.portrait{max-width:210px}.education-grid{gap:28px}.wordmark{font-size:21px}}
 @media(max-width:520px){.masthead{padding:24px 0}.masthead nav{gap:18px;font-size:11px}.hero{grid-template-columns:1fr;padding:40px 0 55px;gap:28px}.portrait{width:112px;justify-self:start;margin:0}.intro{grid-row:2}h1{font-size:58px}.education-grid{grid-template-columns:1fr;gap:30px}.education{margin-bottom:44px}.note{margin-bottom:44px}.project h3{font-size:16px}.section-heading h2{font-size:26px}}
 @media(prefers-reduced-motion:reduce){.arrow{transition:none}}
+
+.wordmark{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;font:600 22px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.8px}
+.wordmark .brand-mark{display:grid;grid-template-columns:7px 7px;grid-template-rows:7px 7px;gap:3px;margin:0;transform:rotate(-7deg);font:inherit;color:inherit}
+.brand-mark i{display:block;background:var(--accent);border-radius:1px}.brand-mark i:nth-child(2){opacity:.38}.brand-mark i:nth-child(3){opacity:.65}
+.wordmark .brand-name{font:inherit;letter-spacing:inherit;margin:0;color:inherit}.wordmark .brand-period{font:inherit;margin:0;color:var(--accent)}
+.company-link{text-decoration:underline;text-decoration-color:#8b9a77;text-decoration-thickness:1px;text-underline-offset:4px;color:var(--ink)}
+
+.previous{font-size:12px;color:var(--muted);margin:15px 0 0;letter-spacing:.02em}.previous>span{color:#b1b6a8;padding:0 10px}.previous a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero{padding-top:82px;padding-bottom:76px}.social{margin-top:22px}.portrait{max-width:250px}
+.education-grid{gap:0;padding-top:30px}.school{display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start}.school+ .school{border-left:1px solid var(--rule);padding-left:36px;margin-left:24px}
+.school-logo{display:flex;align-items:center;justify-content:center;width:52px;height:52px;background:#fff;border:1px solid #e4e5dc;border-radius:12px;overflow:hidden}.school-logo img{display:block;width:40px;height:40px;object-fit:contain}.school-logo:has(img[src$="adelaide.png"]) img{width:48px;height:48px}
+.education-grid h3{font-size:16px;margin:8px 0 9px}.education-grid .education-date{font-size:10px}.study-type{display:inline-block;font-size:10px;color:var(--accent);letter-spacing:.04em;margin-top:15px}
+@media(max-width:760px){.school{grid-template-columns:44px 1fr;gap:14px}.school-logo{width:44px;height:44px}.school-logo img{width:34px;height:34px}.school+ .school{padding-left:22px;margin-left:18px}}
+@media(max-width:520px){.hero{padding:36px 0 50px}.portrait{width:112px}.education-grid{gap:26px}.school+ .school{border-left:0;border-top:1px solid var(--rule);padding:26px 0 0;margin:0}.school{grid-template-columns:48px 1fr;gap:18px}.school-logo{width:48px;height:48px}.education-grid h3{margin-top:7px}}

@@ -3,3 +3,18 @@
 @media(max-width:760px){.page{padding:0 26px}.masthead{padding:20px 0}.masthead nav{gap:18px;font-size:11px}.hero{gap:24px;padding:55px 0}.lead{font-size:21px}.portrait{max-width:240px}.spark{font-size:42px;right:-10px;top:-25px}h1{font-size:59px;letter-spacing:-3px}.section-heading>span{display:none}.project{grid-template-columns:24px 1fr 20px;gap:12px}.tag{display:none}.note{margin-bottom:34px}footer{align-items:start;flex-direction:column;gap:24px}}
 @media(max-width:520px){.masthead nav{gap:15px}.masthead nav a:first-child{display:none}.hero{grid-template-columns:1fr;padding-top:35px;gap:35px}.intro{grid-row:2}.portrait{grid-row:1;width:136px;margin:10px 0 0 5px;justify-self:start}.photo-wrap{padding:6px}.portrait figcaption{display:none}.spark{right:-32px;top:20px}.eyebrow{font-size:9px}h1{font-size:60px;margin-top:16px}.fullname{margin-bottom:20px}.lead{font-size:23px}.about{font-size:14px}.section-heading h2{font-size:26px}.project{padding:22px 0}.project h3{font-size:16px}.project p{font-size:12px}.note{padding:20px;gap:15px}.note p{font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
+
+/* Refined typography and quieter composition. */
+.wordmark{font:600 21px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.7px}
+.page{max-width:1080px}.masthead{padding:32px 0}.masthead nav{font-size:12px;gap:32px}
+.hero{grid-template-columns:1.65fr 1fr;gap:72px;padding:94px 0 88px}
+h1{font-size:clamp(52px,6vw,74px);letter-spacing:-3px}.eyebrow{letter-spacing:.14em}.lead{font-size:24px}
+.portrait{transform:none;max-width:280px;justify-self:end}.photo-wrap{padding:0;background:transparent;border:0;box-shadow:none}.photo-wrap img{border-radius:50%}
+.section-heading h2{font-size:27px}.section-heading>span{letter-spacing:.13em}
+.project{padding:26px 0;transition:color .2s,background .2s}.project h3{font-size:18px}.tag{border:0;padding:0;font-size:11px}a.project:hover{padding:26px 0;background:transparent;color:var(--accent)}a.project:hover .arrow{transform:translate(3px,-3px)}.arrow{transition:transform .2s}
+.note{background:transparent;border-left:2px solid var(--rule);border-radius:0;padding:4px 0 4px 24px;margin:36px 0 64px}.note-mark{display:none}.note p{max-width:660px;font-size:14px}
+.education{margin-bottom:64px}.education-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--rule);padding-top:26px}.education-grid h3{font-size:17px;font-weight:500;letter-spacing:-.3px;margin:8px 0}.education-grid p{font-size:13px;color:var(--muted);margin:0;line-height:1.8}.education-grid .education-date{font:10px/1.5 ui-monospace,monospace;letter-spacing:.06em}
+footer{padding-top:30px}.email{font-size:23px}
+@media(max-width:760px){.hero{gap:28px;padding:60px 0}.portrait{max-width:210px}.education-grid{gap:28px}.wordmark{font-size:21px}}
+@media(max-width:520px){.masthead{padding:24px 0}.masthead nav{gap:18px;font-size:11px}.hero{grid-template-columns:1fr;padding:40px 0 55px;gap:28px}.portrait{width:112px;justify-self:start;margin:0}.intro{grid-row:2}h1{font-size:58px}.education-grid{grid-template-columns:1fr;gap:30px}.education{margin-bottom:44px}.note{margin-bottom:44px}.project h3{font-size:16px}.section-heading h2{font-size:26px}}
+@media(prefers-reduced-motion:reduce){.arrow{transition:none}}
